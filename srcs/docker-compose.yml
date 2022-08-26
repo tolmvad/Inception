@@ -76,21 +76,20 @@ services:
     ports:
       - "6379:6379"
 
-  # ftp-server:
-  #   container_name: ftp-server
-  #   build: ./requirements/bonus/ftp-server/
-  #   restart: always
-  #   env_file: .env
-  #   volumes:
-  #     - wp:/var/www/ftp
-  #   networks:
-  #     - incepnet
-  #   depends_on:
-  #     - wordpress
-  #   ports:
-  #     - "21:21"
-  #     - "21000:21000"
-  #     - "21001:21001"
+  ftp-server:
+    container_name: ftp-server
+    build: ./requirements/bonus/ftp-server/
+    restart: always
+    env_file: .env
+    volumes:
+      - wp:/home/bca
+    networks:
+      - incepnet
+    depends_on:
+      - nginx
+    ports:
+      - "21:21"
+      - "21000-21010:21000-21010"
 
   site:
     container_name: site
