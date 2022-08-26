@@ -22,13 +22,13 @@ volumes:
       o: bind
       device: /home/bcaffere/data/db
 
-  # prt:
-  #   name: prt
-  #   driver: local
-  #   driver_opts:
-  #     type: none
-  #     o: bind
-  #     device: home/bcaffere/data/prt
+  prt:
+    name: prt
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: home/bcaffere/data/prt
 
 services:
   mariadb:
@@ -92,38 +92,38 @@ services:
   #     - "21000:21000"
   #     - "21001:21001"
 
-  # site:
-  #   container_name: site
-  #   build: requirements/bonus/site/
-  #   restart: always
-  #   networks:
-  #     - incepnet
-  #   depends_on:
-  #     - nginx
-  #   ports:
-  #     - "1111:1111"
+  site:
+    container_name: site
+    build: requirements/bonus/site/
+    restart: always
+    networks:
+      - incepnet
+    depends_on:
+      - nginx
+    ports:
+      - "1111:1111"
 
-  # adminer:
-  #   container_name: adminer
-  #   build: ./requirements/bonus/adminer/
-  #   restart: always
-  #   depends_on:
-  #     - mariadb
-  #   networks:
-  #     - incepnet
-  #   ports:
-  #     - "8080:8080"
+  adminer:
+    container_name: adminer
+    build: ./requirements/bonus/adminer/
+    restart: always
+    depends_on:
+      - mariadb
+    networks:
+      - incepnet
+    ports:
+      - "8080:8080"
 
-  # portainer:
-  #   container_name: portainer
-  #   build: ./requirements/bonus/portainer/
-  #   volumes:
-  #     - "/var/run/docker.sock:/var/run/docker.sock:ro"
-  #     - prt:/data
-  #   restart: always
-  #   depends_on:
-  #     - wordpress
-  #   networks:
-  #     - incepnet
-  #   ports:
-  #     - "9443:9443"
+  portainer:
+    container_name: portainer
+    build: ./requirements/bonus/portainer/
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - prt:/data
+    restart: always
+    depends_on:
+      - wordpress
+    networks:
+      - incepnet
+    ports:
+      - "9443:9443"
