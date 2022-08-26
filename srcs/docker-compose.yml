@@ -64,17 +64,17 @@ services:
     ports:
       - "443:443"
 
-  # redis:
-  #   container_name: redis
-  #   build: ./requirements/bonus/redis/
-  #   restart: always
-  #   env_file: .env
-  #   networks:
-  #     - incepnet
-  #   depends_on:
-  #     - nginx
-  #   ports:
-  #     - "6379:6379"
+  redis:
+    container_name: redis
+    build: ./requirements/bonus/redis/
+    restart: always
+    env_file: .env
+    networks:
+      - incepnet
+    depends_on:
+      - nginx
+    ports:
+      - "6379:6379"
 
   # ftp-server:
   #   container_name: ftp-server
