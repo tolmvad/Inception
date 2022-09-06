@@ -7,10 +7,10 @@
 ### Основная часть
 Необходимо создать небольшую инфраструктуру, состоящую из различных сервисов.
 
-<img src="img/docker.svg" height="70" />
-<img src="img/mariadb.svg" height="70" />
-<img src="img/wordpress.svg" height="70" />
-<img src="img/nginx.svg" height="70" />
+<img style="float: left;" src="img/docker.svg" height="70" />
+<img style="float: left;" src="img/mariadb.svg" height="70" />
+<img style="float: left;" src="img/wordpress.svg" height="70" />
+<img style="float: left;" src="img/nginx.svg" height="70" />
 
 ![basic](img/basic.png)
 
@@ -52,10 +52,10 @@ __Если оснваная часть работает безупречно, т
 1) Каждый сервис должен запускаться в отдельном контейнере;
 2) Для каждого сервиса должен быть собственный `Dockerfile`.
 
-<img src="img/redis.svg" height="70" />
-<img src="img/ftp.svg" height="70" />
-<img src="img/adminer.svg" height="70" />
-<img src="img/portainer.svg" height="70" />
+<img style="float: left;" src="img/redis.svg" height="70" />
+<img style="float: left;" src="img/ftp.svg" height="70" />
+<img style="float: left;" src="img/adminer.svg" height="70" />
+<img style="float: left;" src="img/portainer.svg" height="70" />
 
 #### Задачи:
 - Настроить `Redis` кэш для сайта `Wordpress`, для управления кэшем;
@@ -71,10 +71,10 @@ __Если оснваная часть работает безупречно, т
 <summary><b>Сервис на свой выбор</b></summary>
 Начиная делать данный проект, у меня не было четкого плана на дополнительный сервис.
 
-Так уж сложилось, что увидел первым `Portainer` и он запал в душу.
-Объяснять зачем и почему не буду, тут надо просто поднять контейнер с ним)
-Более подробная информации: [Официальный сайт](https://www.portainer.io/) | [Документация](https://docs.portainer.io/)
-И есть одна неприятная пасхалка, которая фиксится, но мне было лень.
+Так уж сложилось, что увидел первым `Portainer` и он запал в душу. <br>
+Объяснять зачем и почему не буду, тут надо просто поднять контейнер с ним) <br>
+Более подробная информации: [Официальный сайт](https://www.portainer.io/) | [Документация](https://docs.portainer.io/) <br>
+И есть одна неприятная пасхалка, которая фиксится, но мне было лень. <br>
 Поэтому сразу предупреждаю, что для первого входа в Portainer, есть timeout error.
 </details>
 
