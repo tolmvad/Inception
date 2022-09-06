@@ -7,10 +7,10 @@
 ### Основная часть
 Необходимо создать небольшую инфраструктуру, состоящую из различных сервисов.
 
-<img style="float: left;" src="img/docker.svg" height="70" />
-<img style="float: left;" src="img/mariadb.svg" height="70" />
-<img style="float: left;" src="img/wordpress.svg" height="70" />
-<img style="float: left;" src="img/nginx.svg" height="70" />
+<img align="left" src="img/docker.svg" height="70">
+<img align="left" src="img/mariadb.svg" height="70">
+<img align="left" src="img/wordpress.svg" height="70">
+<img align="left" src="img/nginx.svg" height="70">
 
 ![basic](img/basic.png)
 
@@ -52,10 +52,10 @@ __Если оснваная часть работает безупречно, т
 1) Каждый сервис должен запускаться в отдельном контейнере;
 2) Для каждого сервиса должен быть собственный `Dockerfile`.
 
-<img style="float: left;" src="img/redis.svg" height="70" />
-<img style="float: left;" src="img/ftp.svg" height="70" />
-<img style="float: left;" src="img/adminer.svg" height="70" />
-<img style="float: left;" src="img/portainer.svg" height="70" />
+<img align="left" src="img/redis.svg" height="70">
+<img align="left" src="img/ftp.svg" height="70">
+<img align="left" src="img/adminer.svg" height="70">
+<img align="left" src="img/portainer.svg" height="70">
 
 #### Задачи:
 - Настроить `Redis` кэш для сайта `Wordpress`, для управления кэшем;
