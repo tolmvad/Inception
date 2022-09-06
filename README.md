@@ -8,10 +8,10 @@ You will virtualize several Docker images, creating them in your new personal vi
 ### Discription of mandatory part
 This project consists in having you set up a small infrastructure composed of different services under specific rules.
 
-<img src="img/docker.svg" height="70" />
-<img src="img/mariadb.svg" height="70" />
-<img src="img/wordpress.svg" height="70" />
-<img src="img/nginx.svg" height="70" />
+<img align="left" src="img/docker.svg" height="70">
+<img align="left" src="img/mariadb.svg" height="70">
+<img align="left" src="img/wordpress.svg" height="70">
+<img align="left" src="img/nginx.svg" height="70">
 
 ![basic](img/basic.png)
 
@@ -48,10 +48,11 @@ __The bonus part will only be assessed if the mandatory part is PERFECT. Perfect
 
 A `Dockerfile` must be written for each extra service. Thus, each one of them will run inside its own container and will have, if necessary, its dedicated volume.
 
-<img src="img/redis.svg" height="70" />
-<img src="img/ftp.svg" height="70" />
-<img src="img/adminer.svg" height="70" />
-<img src="img/portainer.svg" height="70" />
+<img align="left" src="img/redis.svg" height="70">
+<img align="left" src="img/ftp.svg" height="70">
+<img align="left" src="img/adminer.svg" height="70">
+<img align="left" src="img/portainer.svg" height="70">
+<br><br><br>
 
 #### Tasks:
 - Set up `redis` cache for your WordPress website in order to properly manage the cache.

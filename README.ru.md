@@ -56,6 +56,8 @@ __Если оснваная часть работает безупречно, т
 <img align="left" src="img/ftp.svg" height="70">
 <img align="left" src="img/adminer.svg" height="70">
 <img align="left" src="img/portainer.svg" height="70">
+<br><br><br>
+
 
 #### Задачи:
 - Настроить `Redis` кэш для сайта `Wordpress`, для управления кэшем;
